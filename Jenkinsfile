@@ -4,15 +4,21 @@ pipeline {
                 label 'AGENT-1'
             }
         }
-        stage('Hi') {
+        stage('Build') {
             steps {
-                echo 'Hello World'
+                echo 'Building..'
             }
         }
-        stage('Good Morning') {
+        stage('Test') {
             steps {
-                echo 'Good Morning'
+                echo 'Testing'
             }
         }
-    }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+            }
+        }
+}
+    
 
